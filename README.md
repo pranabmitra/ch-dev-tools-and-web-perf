@@ -54,3 +54,6 @@ We can run a demo now. Open the `console-log.html` file in the browser and see t
 
 For the coverage-test, we check the unused bytes for the page by running the `index` page in the browser. Guide has been written in the page to generate the coverage report.
 
+
+Next: [Web Runtime Performance](./WEB_RUNTIME_PERF.md)
+
