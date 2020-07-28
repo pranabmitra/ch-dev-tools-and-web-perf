@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <pre>
+      const animals = [
+        { name: 'cat', color: 'white' },
+        { name: 'dog', color: 'black' },
+        { name: 'zebra', color: 'black and white stripes' }
+      ];
+
+    </pre>
+
+    <pre>
+      console.log(animals);
+      console.log({animals});
+    </pre>
+    <pre>
+      console.table(animals);
+      console.table(animals, ['name']);
+    </pre>
+    <pre>
+      animals.forEach(anAnimal => {
+        console.groupCollapsed(`${anAnimal.name}`);
+        console.log(`This is ${anAnimal.name}`);
+        console.log(`${anAnimal.name} color is ${anAnimal.color}`);
+        console.groupEnd(`${anAnimal.name}`);
+      });
+    </pre>
+    <pre>
+      console.count('Count');
+    </pre>
+
+
+    <script>
+      const animals = [
+        { name: "cat", color: "white" },
+        { name: "dog", color: "black" },
+        { name: "zebra", color: "black and white stripes" },
+      ];
+
+      console.log(animals);
+      console.log('---------------');
+      console.log({ animals });
+      console.log('---------------');
+      console.table(animals);
+      console.log('---------------');
+      console.table(animals, ["name"]);
+      console.log('---------------');
+
+      animals.forEach((animal) => {
+        console.groupCollapsed(`${animal.name}`);
+        console.log(`This is ${animal.name}`);
+        console.log(`${animal.name} color is ${animal.color}`);
+        console.groupEnd(`${animal.name}`);
+      });
+      console.log('---------------');
+
+      console.count("Count");
+      console.log('---------------');
+      console.log('%c This is a colorful text with red background! ', 'background: #f00; color: #bada55');
+    </script>
+  </body>
+</html>
